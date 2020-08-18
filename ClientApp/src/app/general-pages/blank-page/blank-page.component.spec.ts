@@ -8,7 +8,7 @@ describe('BlankPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BlankPageComponent ]
+      declarations: [BlankPageComponent],
     })
     .compileComponents();
   }));

@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = []
+const routes: Routes = [];
 
 @NgModule({
   declarations: [],
@@ -12,6 +11,6 @@ const routes: Routes = []
     CommonModule,
     RouterModule.forChild(routes),
     ReactiveFormsModule,
-  ]
+  ],
 })
 export class AppsModule { }

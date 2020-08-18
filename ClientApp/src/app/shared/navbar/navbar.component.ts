@@ -5,12 +5,12 @@ import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
-  providers: [NgbDropdownConfig]
+  providers: [NgbDropdownConfig],
 })
 export class NavbarComponent implements OnInit {
   public iconOnlyToggled = false;
   public sidebarToggled = false;
-  
+
   constructor(config: NgbDropdownConfig) {
     config.placement = 'bottom-right';
   }
@@ -25,17 +25,18 @@ export class NavbarComponent implements OnInit {
 
   // toggle sidebar
   toggleSidebar() {
-    let body = document.querySelector('body');
-    if((!body.classList.contains('sidebar-toggle-display')) && (!body.classList.contains('sidebar-absolute'))) {
+    const body = document.querySelector('body');
+
+    if ((!body.classList.contains('sidebar-toggle-display')) && (!body.classList.contains('sidebar-absolute'))) {
       this.iconOnlyToggled = !this.iconOnlyToggled;
-      if(this.iconOnlyToggled) {
+      if (this.iconOnlyToggled) {
         body.classList.add('sidebar-icon-only');
       } else {
         body.classList.remove('sidebar-icon-only');
       }
     } else {
       this.sidebarToggled = !this.sidebarToggled;
-      if(this.sidebarToggled) {
+      if (this.sidebarToggled) {
         body.classList.add('sidebar-hidden');
       } else {
         body.classList.remove('sidebar-hidden');
@@ -47,5 +48,4 @@ export class NavbarComponent implements OnInit {
   toggleRightSidebar() {
     document.querySelector('#right-sidebar').classList.toggle('open');
   }
-
 }

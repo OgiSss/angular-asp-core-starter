@@ -8,7 +8,7 @@ describe('MdiComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MdiComponent ]
+      declarations: [MdiComponent],
     })
     .compileComponents();
   }));

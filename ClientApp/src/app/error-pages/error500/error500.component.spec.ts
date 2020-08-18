@@ -8,7 +8,7 @@ describe('Error500Component', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Error500Component ]
+      declarations: [Error500Component],
     })
     .compileComponents();
   }));

@@ -6,12 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
   date: Date = new Date();
 
   visitSaleChartData = [{
@@ -33,7 +27,7 @@ export class DashboardComponent implements OnInit {
     fill: false,
   }];
 
-  visitSaleChartLabels = ["2013", "2014", "2014", "2015", "2016", "2017"];
+  visitSaleChartLabels = ['2013', '2014', '2014', '2015', '2016', '2017'];
 
   visitSaleChartOptions = {
     responsive: true,
@@ -44,30 +38,30 @@ export class DashboardComponent implements OnInit {
                 display: false,
                 min: 0,
                 stepSize: 20,
-                max: 80
+                max: 80,
             },
             gridLines: {
               drawBorder: false,
               color: 'rgba(235,237,242,1)',
-              zeroLineColor: 'rgba(235,237,242,1)'
-            }
+              zeroLineColor: 'rgba(235,237,242,1)',
+            },
         }],
         xAxes: [{
             gridLines: {
-              display:false,
+              display: false,
               drawBorder: false,
               color: 'rgba(0,0,0,1)',
-              zeroLineColor: 'rgba(235,237,242,1)'
+              zeroLineColor: 'rgba(235,237,242,1)',
             },
             ticks: {
                 padding: 20,
-                fontColor: "#9c9fa6",
+                fontColor: '#9c9fa6',
                 autoSkip: true,
             },
             categoryPercentage: 0.4,
-            barPercentage: 0.4
-        }]
-      }
+            barPercentage: 0.4,
+        }],
+      },
   };
 
   visitSaleChartColors = [
@@ -87,7 +81,7 @@ export class DashboardComponent implements OnInit {
         'rgba(154, 85, 255, 1)',
         'rgba(154, 85, 255, 1)',
         'rgba(154, 85, 255, 1)',
-      ]
+      ],
     },
     {
       backgroundColor: [
@@ -105,7 +99,7 @@ export class DashboardComponent implements OnInit {
         'rgba(254, 112, 150, 1)',
         'rgba(254, 112, 150, 1)',
         'rgba(254, 112, 150, 1)',
-      ]
+      ],
     },
     {
       backgroundColor: [
@@ -123,23 +117,23 @@ export class DashboardComponent implements OnInit {
         'rgba(177, 148, 250, 1)',
         'rgba(177, 148, 250, 1)',
         'rgba(177, 148, 250, 1)',
-      ]
+      ],
     },
   ];
 
   trafficChartData = [
     {
       data: [30, 30, 40],
-    }
+    },
   ];
 
-  trafficChartLabels = ["Search Engines", "Direct Click", "Bookmarks Click"];
+  trafficChartLabels = ['Search Engines', 'Direct Click', 'Bookmarks Click'];
 
   trafficChartOptions = {
     responsive: true,
     animation: {
       animateScale: true,
-      animateRotate: true
+      animateRotate: true,
     },
     legend: false,
   };
@@ -149,14 +143,17 @@ export class DashboardComponent implements OnInit {
       backgroundColor: [
         'rgba(177, 148, 250, 1)',
         'rgba(254, 112, 150, 1)',
-        'rgba(132, 217, 210, 1)'
+        'rgba(132, 217, 210, 1)',
       ],
       borderColor: [
         'rgba(177, 148, 250, .2)',
         'rgba(254, 112, 150, .2)',
-        'rgba(132, 217, 210, .2)'
-      ]
-    }
+        'rgba(132, 217, 210, .2)',
+      ],
+    },
   ];
+  constructor() { }
 
+  ngOnInit() {
+  }
 }

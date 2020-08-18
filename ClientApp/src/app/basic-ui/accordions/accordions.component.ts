@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accordions.component.scss'],
 })
 export class AccordionsComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
-
 }

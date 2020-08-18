@@ -8,7 +8,7 @@ describe('AccordionsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccordionsComponent ]
+      declarations: [AccordionsComponent],
     })
     .compileComponents();
   }));

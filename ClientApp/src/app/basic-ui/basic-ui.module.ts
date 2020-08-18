@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
-
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AccordionsComponent } from './accordions/accordions.component';
@@ -10,12 +9,12 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DropdownsComponent } from './dropdowns/dropdowns.component';
 import { ModalsComponent } from './modals/modals.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TooltipsComponent } from './tooltips/tooltips.component';
 import { TypographyComponent } from './typography/typography.component';
-import { NotificationsComponent } from './notifications/notifications.component';
 
 const routes: Routes = [
   { path: 'accordions', component: AccordionsComponent },
@@ -39,6 +38,6 @@ const routes: Routes = [
     CommonModule,
     NgbModule,
     RouterModule.forChild(routes),
-  ]
+  ],
 })
 export class BasicUiModule { }
